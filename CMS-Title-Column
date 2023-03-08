@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "button",
+  "customRowAction": {
+    "action": "defaultClick"
+  },
+  "attributes": {
+    "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
+  },
+  "style": {
+    "display": "table",
+    "border": "none",
+    "background-color": "transparent",
+    "cursor": "pointer"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "txtContent": "=[$Title]",
+      "style": {
+        "display": "table-cell",
+        "text-align": "left",
+        "vertical-align": "middle",
+        "width": "100%",
+        "font-size": "15px"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "display": "table-cell",
+        "text-align": "left",
+        "vertical-align": "middle",
+        "padding-right": "5px"
+      },
+      "attributes": {
+        "iconName": "Comment"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "display": "table-cell",
+        "text-align": "right",
+        "vertical-align": "middle"
+      },
+      "txtContent": "=if( [$_CommentCount] == '' , 0 , [$_CommentCount] )"
+    }
+  ]
+}
