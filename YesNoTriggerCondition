@@ -1,0 +1,5 @@
+@equals(triggerOutputs()?['body/IsTrainee'],bool(1))
+
+@equals(triggerBody()?['IsTrainee'],bool(1))
+
+@equals(triggerBody()?['SendNow']?['Value'],'True')
