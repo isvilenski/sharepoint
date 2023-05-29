@@ -1,0 +1,65 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "display": "table",
+    "border": "none",
+    "background-color": "transperant"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "txtContent": "=[$Title]",
+      "style": {
+        "text-align": "left",
+        "vertical-align": "middle",
+        "width": "250px",
+        "white-space": "nowrap",
+        "overflow": "hidden",
+        "text-overflow": "ellipsis",
+        "font-size": "15px",
+        "padding-top": "5px"
+      },
+      "attributes": {
+        "class": "ms-fontColor-themePrimary ms-fontColor-themeDarker--hover"
+      }
+    },
+    {
+      "elmType": "div",
+      "customRowAction": {
+        "action": "defaultClick"
+      },
+      "attributes": {
+        "iconName": "View",
+        "class": "ms-bgColor-themePrimary--hover ms-fontColor-white--hover",
+        "title": "View Item"
+      },
+      "style": {
+        "display": "table-cell",
+        "text-align": "center",
+        "vertical-align": "middle",
+        "width": "30px",
+        "cursor": "pointer"
+      }
+    },
+    {
+      "elmType": "div",
+      "customRowAction": {
+        "action": "editProps"
+      },
+      "attributes": {
+        "iconName": "Edit",
+        "class": "ms-bgColor-themePrimary--hover ms-fontColor-white--hover",
+        "title": "Edit Item"
+      },
+      "style": {
+        "display": "table-cell",
+        "text-align": "center",
+        "vertical-align": "middle",
+        "padding-right": "0px",
+        "width": "30px",
+        "cursor": "pointer"
+      }
+    }
+  ]
+}
